@@ -108,6 +108,7 @@ const db = {
 }
 
 server.get("/api/projects", (request, response) => {
+    console.log(PORT);
     response.json(db.projects);
 });
 server.get("/api/projects/web_development", (request, response) => {
