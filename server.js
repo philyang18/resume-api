@@ -16,6 +16,7 @@ const db = {
         web_development: [
             {
                 id: 1,
+                title: "Movies 4 You",
                 url: "http://303.itpwebdev.com/~yangphil/assignment5/movie.html",
                 languages: "html, css, javascript",
                 frameworks: "bootstrap",
@@ -24,6 +25,7 @@ const db = {
             },
             {
                 id: 2,
+                title: "DVD Database",
                 url: "http://303.itpwebdev.com/~yangphil/assignment10/index.php",
                 languages: "html, css, php",
                 frameworks: "bootstrap",
@@ -32,6 +34,7 @@ const db = {
             },
             {
                 id: 3,
+                title: "Memeversity",
                 url: "http://303.itpwebdev.com/~yangphil/final_project/login.php",
                 languages: "html, css, javascript, php",
                 frameworks: "bootstrap",
@@ -40,6 +43,7 @@ const db = {
             },
             {
                 id: 4,
+                title: "NASA Images",
                 url: "https://nasa-images.surge.sh",
                 languages: "html, css, javascript",
                 frameworks: "bootstrap, react",
@@ -47,6 +51,7 @@ const db = {
             },
             {
                 id: 5,
+                title: "this",
                 url: "#",
                 languages: "html, css, javascript",
                 frameworks: "bootstrap, react",
@@ -56,30 +61,35 @@ const db = {
         programming: [
             {
                 id: 1,
+                title: "",
                 video_url: "",
                 languages: "C++",
                 description: ""
             },
             {
                 id: 2,
+                title: "",
                 video_url: "",
                 languages: "C++",
                 description: ""
             },
             {
                 id: 3,
+                title: "",
                 video_url: "",
                 languages: "C++",
                 description: ""
             },
             {
                 id: 4,
+                title: "",
                 video_url: "",
                 languages: "C++",
                 description: ""
             },
             {
                 id: 5,
+                title: "",
                 video_url: "",
                 languages: "C++",
                 description: ""
@@ -88,6 +98,7 @@ const db = {
         microcontrollers: [
             {
                 id: 1,
+                title: "",
                 video_url: "",
                 interface_url: "",
                 description: ""
