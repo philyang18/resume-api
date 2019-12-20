@@ -8,7 +8,7 @@ const IS_DEVELOPMENT = ENVIRONMENT === 'development';
 // middleware
 server.use(express.json());
 server.use(cors({
-  origin: IS_DEVELOPMENT ? 'localhost:3000' : 'https://nasa-images.surge.sh'
+  origin: IS_DEVELOPMENT ? 'http://localhost:3000' : 'https://nasa-images.surge.sh'
 }));
 
 const db = {
