@@ -99,7 +99,7 @@ const db = {
 server.get("/api/projects", (request, response) => {
     response.json(db.projects);
 });
-server.get("/api/projects/web", (request, response) => {
+server.get("/api/projects/web_development", (request, response) => {
     response.json(db.projects.web_development);
 });
 server.get("/api/projects/programming", (request, response) => {
@@ -110,12 +110,11 @@ server.get("/api/projects/microcontrollers", (request, response) => {
 });
 
 
-server.get("/api/projects/web/:id", (request, response) => {
+server.get("/api/projects/web_development/:id", (request, response) => {
     const id = request.params.id;
     const post = db.projects.web_development.find((post) => {
         return post.id === id;
     });
-    
     if(post) {
         response.json(post);
     } else {
@@ -135,89 +134,13 @@ server.get("/api/projects/programming/:id", (request, response) => {
         response.status(404).send();
     }
 });
-
-server.post("/api/projects/web", (request, response) => {
-    const post = request.body;
-    // post.id = db.projects.web_development.length + 1;
-    db.projects.web_development.push(post);
-    response.json(post);
-});
-
-server.post("/api/projects/programming", (request, response) => {
-    const post = request.body;
-    // post.id = db.projects.programming.length + 1;
-    db.projects.programming.push(post);
-    response.json(post);
-});
-
-server.delete("/api/projects/web/:id", (request, response) => {
+server.get("/api/projects/microcontrollers/:id", (request, response) => {
     const id = request.params.id;
-
-    const post = db.projects.web_development.find(post => {
-        return id === post.id;
+    const post = db.projects.microcontrollers.find((post) => {
+        return post.id === id;
     });
-    if (post) {
-        db.projects.web_development = db.projects.web_development.filter(post => {
-            return post.id !== id;
-        });
-        response.status(204).send();
-    } else {
-        response.status(404).send();
-    }
-});
-
-server.delete("/api/projects/programming/:id", (request, response) => {
-    const id = request.params.id;
-
-    const post = db.projects.programming.find(post => {
-        return id === post.id;
-    });
-    if (post) {
-        db.projects.programming = db.projects.programming.filter(post => {
-            return post.id !== id;
-        });
-        response.status(204).send();
-    } else {
-        response.status(404).send();
-    }
-});
-
-// server.delete("/api/projects/programming/:url", (request, response) => {
-//     const url = String(request.params.url);
     
-//     const post = db.projects.programming.find(post => {
-//         return url === post.url;
-//     });
-//     response.json(post);
-//     if (post) {
-//         db.projects.programming = db.projects.programming.filter(post => {
-//             return post.url !== url;
-//         });
-//         response.status(204).send();
-//     } else {
-//         response.status(404).send();
-//     }
-// });
-server.put("/api/projects/web/:id", (request, response) => {
-    const id = request.params.id;
-    const post = db.projects.web_development.find( post => {
-        return post.id === id;
-    });
-    if (post) {
-        Object.assign(post, request.body);
-        response.json(post);
-    } else {
-        response.status(404).send();
-    }
-});
-
-server.put("/api/projects/programming/:id", (request, response) => {
-    const id = request.params.id;
-    const post = db.projects.programming.find( post => {
-        return post.id === id;
-    });
-    if (post) {
-        Object.assign(post, request.body);
+    if(post) {
         response.json(post);
     } else {
         response.status(404).send();
