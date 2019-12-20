@@ -4,12 +4,11 @@ const server = express();
 
 
 const { ENVIRONMENT, PORT } = process.env;
-const IS_DEVELOPMENT = ENVIRONMENT === 'development';
 // middleware
 server.use(express.json());
 server.use(cors({
-//   origin: IS_DEVELOPMENT ? 'http://localhost:3000' : 'https://nasa-images.surge.sh'
-    origin: 'http://localhost:3000'
+origin: ENVIRONMENT === 'development' ? 'http://localhost:3000' : 'https://nasa-images.surge.sh'
+    // origin: 'http://localhost:3000'
 }));
 
 const db = {
