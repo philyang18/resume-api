@@ -3,11 +3,11 @@ const cors = require('cors');
 const server = express();
 
 
-const { ENVIRONMENT, PORT, NODE_ENV} = process.env;
+const { ENVIRONMENT, PORT } = process.env;
 // middleware
 server.use(express.json());
 server.use(cors({
-    origin: NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://nasa-images.surge.sh'
+    origin: ENVIRONMENT === 'development' ? 'http://localhost:3000' : 'https://nasa-images.surge.sh'
     // origin: 'http://localhost:3000'
 }));
 
