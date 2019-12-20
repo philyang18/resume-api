@@ -56,7 +56,7 @@ const db = {
                 languages: "html, css, javascript",
                 frameworks: "bootstrap, react",
                 description: ""
-            },
+            }
         ],
         programming: [
             {
@@ -93,7 +93,7 @@ const db = {
                 video_url: "",
                 languages: "C++",
                 description: ""
-            },
+            }
         ],
         microcontrollers: [
             {
@@ -120,10 +120,8 @@ server.get("/api/projects/programming", (request, response) => {
 server.get("/api/projects/microcontrollers", (request, response) => {
     response.json(db.projects.microcontrollers);
 });
-
-
 server.get("/api/projects/web_development/:id", (request, response) => {
-    const id = request.params.id;
+    const id = Number(request.params.id);
     const post = db.projects.web_development.find((post) => {
         return post.id === id;
     });
@@ -135,7 +133,7 @@ server.get("/api/projects/web_development/:id", (request, response) => {
 });
 
 server.get("/api/projects/programming/:id", (request, response) => {
-    const id = request.params.id;
+    const id = Number(request.params.id);
     const post = db.projects.programming.find((post) => {
         return post.id === id;
     });
@@ -146,8 +144,9 @@ server.get("/api/projects/programming/:id", (request, response) => {
         response.status(404).send();
     }
 });
+
 server.get("/api/projects/microcontrollers/:id", (request, response) => {
-    const id = request.params.id;
+    const id = Number(request.params.id);
     const post = db.projects.microcontrollers.find((post) => {
         return post.id === id;
     });
