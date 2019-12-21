@@ -47,20 +47,20 @@ const db = {
             {
                 id: 4,
                 title: "NASA Images",
-                thumbnail: "./images/meme.png",
+                thumbnail: "./images/nasa.jpg",
                 url: "https://nasa-images.surge.sh",
                 languages: "html, css, javascript",
                 frameworks: "bootstrap, react",
-                description: "hello"
+                description: "NASA Images is a single page application that uses NASA's Astronomy Photo of the Day and Mars Rover APIs. The site uses a server-side API to store the users favorites. Since I do not use a database, all activity is synced to my API so everyone sees the changes caused by others."
             },
             {
                 id: 5,
                 title: "this",
-                thumbnail: "./images/meme.png",
-                url: "#",
+                thumbnail: "./images/pin.png",
+                url: "",
                 languages: "html, css, javascript",
                 frameworks: "bootstrap, react",
-                description: ""
+                description: "This website uses a server-side API to access all my project information. I decided to use an API instead of hardcoding all my projects because I wanted to reduce the amount of code and make it super easy for me to add new projects. Since the components I am using are reusable, I just have to edit the api and I do not have to rebuild my react project and redeploy. The api is live so when the api is edited, this site will change."
             }
         ],
         programming: [
