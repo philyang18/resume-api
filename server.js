@@ -18,19 +18,19 @@ const db = {
                 id: 1,
                 title: "Movies 4 You",
                 thumbnail: "./images/movies.png",
-                url: "http://303.itpwebdev.com/~yangphil/assignment5/movie.html",
-                languages: "html, css, javascript",
-                frameworks: "bootstrap",
+                url: "http://303.itpwebdev.com/~yangphil/assignment5/movie.HTML",
+                languages: "HTML, CSS, JavaScript",
+                frameworks: "Bootstrap",
                 type: "Frontend",
-                description: "This website was a course assignment that challenged me when I began web development. The purpose of the site is to make an AJAX call to an API created by TheMovieDB then use javascript to create HTML elements with the information from the API."
+                description: "This website was a course assignment that challenged me when I began web development. The purpose of the site is to make an AJAX call to an API created by TheMovieDB then use JavaScript to create HTML elements with the information from the API."
             },
             {
                 id: 2,
                 title: "DVD Database",
                 thumbnail: "./images/dvd.jpg",
-                url: "http://303.itpwebdev.com/~yangphil/assignment10/index.php",
-                languages: "html, css, php",
-                frameworks: "bootstrap",
+                url: "http://303.itpwebdev.com/~yangphil/assignment10/index.PHP",
+                languages: "HTML, CSS, PHP",
+                frameworks: "Bootstrap",
                 type: "Frontend",
                 description: "hello"
             },
@@ -38,35 +38,35 @@ const db = {
                 id: 3,
                 title: "Memeversity",
                 thumbnail: "./images/meme.png",
-                url: "http://303.itpwebdev.com/~yangphil/final_project/login.php",
-                languages: "html, css, javascript, php",
-                frameworks: "bootstrap",
+                url: "http://303.itpwebdev.com/~yangphil/final_project/login.PHP",
+                languages: "HTML, CSS, JavaScript, PHP",
+                frameworks: "Bootstrap",
                 type: "Full Stack",
-                description: "This project is my first full stack application. The idea was to create a web app that allows users to search through popular meme templates so that they can create and save their own memes. Currently, the website retrieves the templates from a free meme API and stores the template urls onto my database. Since the API generates a different set of templates every few weeks, I 'refresh' my database with the new set of memes everytime a user logs in. I also implemented a button at the bottom of the home page so that the user can manually execute this process. Users can also 'favorite' the templates so that it is saved in my database before it is removed from the API.\nAll database communication is executed by making sql statements in php. The 'forgot password' is functional however it does not use a foolproof method because it simply emails the user their password instead of linking them to a page where they can change their password safely. Please note that I have not implemented the create functionality or the FaceBook login."
+                description: "This project is my first full stack application. The idea was to create a web app that allows users to search through popular meme templates so that they can create and save their own memes. Currently, the website retrieves the templates from a free meme API and stores the template urls onto my database. Since the API generates a different set of templates every few weeks, I 'refresh' my database with the new set of memes everytime a user logs in. I also implemented a button at the bottom of the home page so that the user can manually execute this process. Users can also 'favorite' the templates so that it is saved in my database before it is removed from the API.\nAll database communication is executed by making sql statements in PHP. The 'forgot password' is functional however it does not use a foolproof method because it simply emails the user their password instead of linking them to a page where they can change their password safely. Please note that I have not implemented the create functionality or the FaceBook login."
             },
             {
                 id: 4,
                 title: "NASA Images",
                 thumbnail: "./images/nasa.jpg",
                 url: "https://nasa-images.surge.sh",
-                languages: "html, css, javascript",
-                frameworks: "bootstrap, react",
+                languages: "HTML, CSS, JavaScript",
+                frameworks: "Bootstrap, react",
                 description: "NASA Images is a single page application that uses NASA's Astronomy Photo of the Day and Mars Rover APIs. The site uses a server-side API to store the users favorites. Since I do not use a database, all activity is synced to my API so everyone sees the changes caused by others."
             },
             {
                 id: 5,
                 title: "this",
-                thumbnail: "./images/pin.png",
+                thumbnail: "./images/pin.jpg",
                 url: "",
-                languages: "html, css, javascript",
-                frameworks: "bootstrap, react",
+                languages: "HTML, CSS, JavaScript",
+                frameworks: "Bootstrap, react",
                 description: "This website uses a server-side API to access all my project information. I decided to use an API instead of hardcoding all my projects because I wanted to reduce the amount of code and make it super easy for me to add new projects. Since the components I am using are reusable, I just have to edit the api and I do not have to rebuild my react project and redeploy. The api is live so when the api is edited, this site will change."
             }
         ],
         programming: [
             {
                 id: 1,
-                title: "",
+                title: "Sieve of Erastosthenes",
                 thumbnail: "./images/github.png",
                 video_url: "",
                 languages: "C++",
@@ -142,7 +142,6 @@ server.get("/api/projects/web_development/:id", (request, response) => {
         response.status(404).send();
     }
 });
-
 server.get("/api/projects/programming/:id", (request, response) => {
     const id = Number(request.params.id);
     const post = db.projects.programming.find((post) => {
@@ -155,7 +154,6 @@ server.get("/api/projects/programming/:id", (request, response) => {
         response.status(404).send();
     }
 });
-
 server.get("/api/projects/microcontrollers/:id", (request, response) => {
     const id = Number(request.params.id);
     const post = db.projects.microcontrollers.find((post) => {
