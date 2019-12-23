@@ -18,49 +18,61 @@ const db = {
                 id: 1,
                 title: "Movies 4 You",
                 thumbnail: "./images/movies.png",
-                url: "http://303.itpwebdev.com/~yangphil/assignment5/movie.HTML",
+                github_url: "",
                 languages: "HTML, CSS, JavaScript",
+                video_url: "",
+                description: "This website was a course assignment that challenged me when I began web development. The purpose of the site is to make an AJAX call to an API created by TheMovieDB then use JavaScript to create HTML elements with the information from the API.",
+                url: "http://303.itpwebdev.com/~yangphil/assignment5/movie.HTML",
                 frameworks: "Bootstrap",
-                type: "Frontend",
-                description: "This website was a course assignment that challenged me when I began web development. The purpose of the site is to make an AJAX call to an API created by TheMovieDB then use JavaScript to create HTML elements with the information from the API."
+                type: "Frontend"
             },
             {
                 id: 2,
                 title: "DVD Database",
                 thumbnail: "./images/dvd.jpg",
-                url: "http://303.itpwebdev.com/~yangphil/assignment10/index.PHP",
+                github_url: "",
                 languages: "HTML, CSS, PHP",
+                video_url: "",
+                description: "hello",
+                url: "http://303.itpwebdev.com/~yangphil/assignment10/index.PHP",
                 frameworks: "Bootstrap",
-                type: "Frontend",
-                description: "hello"
+                type: "Frontend"
             },
             {
                 id: 3,
                 title: "Memeversity",
                 thumbnail: "./images/meme.png",
-                url: "http://303.itpwebdev.com/~yangphil/final_project/login.PHP",
+                github_url: "",
                 languages: "HTML, CSS, JavaScript, PHP",
+                video_url: "",
+                description: "This project is my first full stack application. The idea was to create a web app that allows users to search through popular meme templates so that they can create and save their own memes. Currently, the website retrieves the templates from a free meme API and stores the template urls onto my database. Since the API generates a different set of templates every few weeks, I 'refresh' my database with the new set of memes everytime a user logs in. I also implemented a button at the bottom of the home page so that the user can manually execute this process. Users can also 'favorite' the templates so that it is saved in my database before it is removed from the API.\nAll database communication is executed by making sql statements in PHP. The 'forgot password' is functional however it does not use a foolproof method because it simply emails the user their password instead of linking them to a page where they can change their password safely. Please note that I have not implemented the create functionality or the FaceBook login.",
+                url: "http://303.itpwebdev.com/~yangphil/final_project/login.PHP",
                 frameworks: "Bootstrap",
-                type: "Full Stack",
-                description: "This project is my first full stack application. The idea was to create a web app that allows users to search through popular meme templates so that they can create and save their own memes. Currently, the website retrieves the templates from a free meme API and stores the template urls onto my database. Since the API generates a different set of templates every few weeks, I 'refresh' my database with the new set of memes everytime a user logs in. I also implemented a button at the bottom of the home page so that the user can manually execute this process. Users can also 'favorite' the templates so that it is saved in my database before it is removed from the API.\nAll database communication is executed by making sql statements in PHP. The 'forgot password' is functional however it does not use a foolproof method because it simply emails the user their password instead of linking them to a page where they can change their password safely. Please note that I have not implemented the create functionality or the FaceBook login."
+                type: "Full Stack"
             },
             {
                 id: 4,
                 title: "NASA Images",
                 thumbnail: "./images/nasa.jpg",
-                url: "https://nasa-images.surge.sh",
+                github_url: "",
                 languages: "HTML, CSS, JavaScript",
+                video_url: "",
+                description: "NASA Images is a single page application that uses NASA's Astronomy Photo of the Day and Mars Rover APIs. The site uses a server-side API to store the users favorites. Since I do not use a database, all activity is synced to my API so everyone sees the changes caused by others.",
+                url: "https://nasa-images.surge.sh",
                 frameworks: "Bootstrap, react",
-                description: "NASA Images is a single page application that uses NASA's Astronomy Photo of the Day and Mars Rover APIs. The site uses a server-side API to store the users favorites. Since I do not use a database, all activity is synced to my API so everyone sees the changes caused by others."
+                type: "Front End"
             },
             {
                 id: 5,
                 title: "this",
                 thumbnail: "./images/pin.jpg",
-                url: "",
+                github_url: "",
                 languages: "HTML, CSS, JavaScript",
+                video_url: "",
+                description: "This website uses a server-side API to access all my project information. I decided to use an API instead of hardcoding all my projects because I wanted to reduce the amount of code and make it super easy for me to add new projects. Since the components I am using are reusable, I just have to edit the api and I do not have to rebuild my react project and redeploy. The api is live so when the api is edited, this site will change.",
+                url: "",
                 frameworks: "Bootstrap, react",
-                description: "This website uses a server-side API to access all my project information. I decided to use an API instead of hardcoding all my projects because I wanted to reduce the amount of code and make it super easy for me to add new projects. Since the components I am using are reusable, I just have to edit the api and I do not have to rebuild my react project and redeploy. The api is live so when the api is edited, this site will change."
+                type: "Front End"
             }
         ],
         programming: [
@@ -68,40 +80,45 @@ const db = {
                 id: 1,
                 title: "Sieve of Erastosthenes",
                 thumbnail: "./images/github.png",
-                video_url: "",
+                github_url: "",
                 languages: "C++",
+                video_url: "",
                 description: ""
             },
             {
                 id: 2,
-                title: "",
+                title: "Sieve of Erastosthenes",
                 thumbnail: "./images/github.png",
-                video_url: "",
+                github_url: "",
                 languages: "C++",
+                video_url: "",
                 description: ""
             },
             {
                 id: 3,
-                title: "",
+                title: "Sieve of Erastosthenes",
                 thumbnail: "./images/github.png",
-                video_url: "",
+                github_url: "",
                 languages: "C++",
+                video_url: "",
                 description: ""
             },
             {
                 id: 4,
-                title: "",
+                title: "Sieve of Erastosthenes",
                 thumbnail: "./images/github.png",
-                video_url: "",
+                github_url: "",
                 languages: "C++",
+                video_url: "",
                 description: ""
             },
             {
                 id: 5,
-                title: "",
+                title: "Sieve of Erastosthenes",
                 thumbnail: "./images/github.png",
-                video_url: "",
+                github_url: "",
                 languages: "C++",
+                video_url: "",
                 description: ""
             }
         ],
@@ -110,19 +127,23 @@ const db = {
                 id: 1,
                 title: "Arduino Monitoring System",
                 thumbnail: "./images/arduino.jpeg",
-                video_url: "",
                 github_url: "",
-                interface_url: "https://nuhzdinlab.onlosant.com/kelp",
-                description: "In the fall semester of 2019, I worked on a fully-funded project for the Nuzhdin Lab at USC with three other students. The goal of this project was to build an automated system of water tanks to store kelp samples in ideal ocean conditions for biofuel research. My primary role was programming the sensors with an Arduino Uno, and broadcasting the data onto the internet through an IoT platform called Losant so that the lab can observe tank conditions at all times. However, the Arduino we purchased did not have wifi capabilities and I did not want to spend more money on a wifi shield so I used a software called 'Cool Term' to continuously save Arduino data onto a text file. Then I wrote a script in Java which reads in lastest line from the file and sends a POST request to a Losant webhook. From Losant's app, I was able to access that line of data and break it into its separate components so that I can display the data nicely on an interface. One amazing feature is that Losant will send a text message to the head of the lab if any of the tank conditions are abnormal."
+                languages: "C++, Java",
+                video_url: "",
+                description: "In the fall semester of 2019, I worked on a fully-funded project for the Nuzhdin Lab at USC with three other students. The goal of this project was to build an automated system of water tanks to store kelp samples in ideal ocean conditions for biofuel research. My primary role was programming the sensors with an Arduino Uno, and broadcasting the data onto the internet through an IoT platform called Losant so that the lab can observe tank conditions at all times. However, the Arduino we purchased did not have wifi capabilities and I did not want to spend more money on a wifi shield so I used a software called 'Cool Term' to continuously save Arduino data onto a text file. Then I wrote a script in Java which reads in lastest line from the file and sends a POST request to a Losant webhook. From Losant's app, I was able to access that line of data and break it into its separate components so that I can display the data nicely on an interface. One amazing feature is that Losant will send a text message to the head of the lab if any of the tank conditions are abnormal.",
+                url: "https://nuhzdinlab.onlosant.com/kelp",
+                technologies: "Arduino, Cool Term, Losant"
             },
             {
                 id: 2,
                 title: "Bluetooth Car",
                 thumbnail: "./images/car.jpg",
-                video_url: "",
                 github_url: "github.com",
-                interface_url: "https://carproject.onlosant.com/dashboard",
-                description: "This car is one of my favorite and most fun projects. The car is controlled my iPhone's accelerometer via the Bluefruit app which sends X, Y, Z values to my Particle Argon microcontroller. I wanted to mimic a few existing car features such as autonomous emergency braking and automatic headlights. For the brake system, I implemented an ultrasonic distance sensor to the front of the car and added a piezoelectric speaker that will create a 'beeping' sound that gradually increases in frequency as the car approaches an obstacle. The lights are controlled by a photoresistor and I also integrated a power switch so that the user can turn off the headlights. Additionally, I created an interface on Losant so that I can observe speed, set variable max speeds, and toggle the braking system. The reason why I chose a Particle Argon instead of an Arduino is because it has bluetooth and wifi capabilities. Wifi is needed to connect to additional features on the Losant interface and bluetooth is necessary to communicate with the accelerometer."
+                languages: "C++",
+                video_url: "",
+                description: "This car is one of my favorite and most fun projects. The car is controlled my iPhone's accelerometer via the Bluefruit app which sends X, Y, Z values to my Particle Argon microcontroller. I wanted to mimic a few existing car features such as autonomous emergency braking and automatic headlights. For the brake system, I implemented an ultrasonic distance sensor to the front of the car and added a piezoelectric speaker that will create a 'beeping' sound that gradually increases in frequency as the car approaches an obstacle. The lights are controlled by a photoresistor and I also integrated a power switch so that the user can turn off the headlights. Additionally, I created an interface on Losant so that I can observe speed, set variable max speeds, and toggle the braking system. The reason why I chose a Particle Argon instead of an Arduino is because it has bluetooth and wifi capabilities. Wifi is needed to connect to additional features on the Losant interface and bluetooth is necessary to communicate with the accelerometer.",
+                url: "https://carproject.onlosant.com/dashboard",
+                technologies: "Particle, Bluefruit, Losant"
             }
         ] 
     }
