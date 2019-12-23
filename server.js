@@ -111,8 +111,18 @@ const db = {
                 title: "Arduino Monitoring System",
                 thumbnail: "./images/arduino.jpeg",
                 video_url: "",
+                github_url: "",
                 interface_url: "https://nuhzdinlab.onlosant.com/kelp",
                 description: "In the fall semester of 2019, I worked on a fully-funded project for the Nuzhdin Lab at USC with three other students. The goal of this project was to build an automated system of water tanks to store kelp samples in ideal ocean conditions for biofuel research. My primary role was programming the sensors with an Arduino Uno, and broadcasting the data onto the internet through an IoT platform called Losant so that the lab can observe tank conditions at all times. However, the Arduino we purchased did not have wifi capabilities and I did not want to spend more money on a wifi shield so I used a software called 'Cool Term' to continuously save Arduino data onto a text file. Then I wrote a script in Java which reads in lastest line from the file and sends a POST request to a Losant webhook. From Losant's app, I was able to access that line of data and break it into its separate components so that I can display the data nicely on an interface. One amazing feature is that Losant will send a text message to the head of the lab if any of the tank conditions are abnormal."
+            },
+            {
+                id: 2,
+                title: "Bluetooth Car",
+                thumbnail: "./images/car.jpg",
+                video_url: "",
+                github_url: "",
+                interface_url: "https://carproject.onlosant.com/dashboard",
+                description: "This car is one of my favorite and most fun projects. The car is controlled my iPhone's accelerometer via the Bluefruit app which sends X, Y, Z values to my Particle Argon microcontroller. I wanted to mimic a few existing car features such as autonomous emergency braking and automatic headlights. For the brake system, I implemented an ultrasonic distance sensor to the front of the car and added a piezoelectric speaker that will create a 'beeping' sound that gradually increases in frequency as the car approaches an obstacle. The lights are controlled by a photoresistor and I also integrated a power switch so that the user can turn off the headlights. Additionally, I created an interface on Losant so that I can observe speed, set variable max speeds, and toggle the braking system. The reason why I chose a Particle Argon instead of an Arduino is because it has bluetooth and wifi capabilities. Wifi is needed to connect to additional features on the Losant interface and bluetooth is necessary to communicate with the accelerometer."
             }
         ] 
     }
