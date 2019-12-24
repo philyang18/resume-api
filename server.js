@@ -16,30 +16,6 @@ const db = {
         web_development: [
             {
                 id: 1,
-                title: "Movies 4 You",
-                thumbnail: "./images/movies.png",
-                github_url: "",
-                languages: "HTML, CSS, JavaScript",
-                video_url: "",
-                description: "This website was a course assignment that challenged me when I began web development. The purpose of the site is to make an AJAX call to an API created by TheMovieDB then use JavaScript to create HTML elements with the information from the API.",
-                url: "http://303.itpwebdev.com/~yangphil/assignment5/movie.HTML",
-                frameworks: "Bootstrap",
-                type: "Frontend"
-            },
-            {
-                id: 2,
-                title: "DVD Database",
-                thumbnail: "./images/dvd.jpg",
-                github_url: "",
-                languages: "HTML, CSS, PHP",
-                video_url: "",
-                description: "hello",
-                url: "http://303.itpwebdev.com/~yangphil/assignment10/index.PHP",
-                frameworks: "Bootstrap",
-                type: "Frontend"
-            },
-            {
-                id: 3,
                 title: "Memeversity",
                 thumbnail: "./images/meme.png",
                 github_url: "",
@@ -51,7 +27,7 @@ const db = {
                 type: "Full Stack"
             },
             {
-                id: 4,
+                id: 2,
                 title: "NASA Images",
                 thumbnail: "./images/nasa.jpg",
                 github_url: "",
@@ -63,7 +39,7 @@ const db = {
                 type: "Front End"
             },
             {
-                id: 5,
+                id: 3,
                 title: "this",
                 thumbnail: "./images/pin.jpg",
                 github_url: "",
