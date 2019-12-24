@@ -83,16 +83,18 @@ const db = {
                 github_url: "",
                 languages: "C++",
                 video_url: "",
-                description: ""
+                description: "",
+                frameworks: ""
             },
             {
                 id: 2,
-                title: "Sieve of Erastosthenes",
+                title: "Lights Out Game",
                 thumbnail: "./images/github.png",
-                github_url: "",
-                languages: "C++",
-                video_url: "",
-                description: ""
+                github_url: "https://github.com/philyang18/Java-Lights-Out-Game",
+                languages: "Java",
+                video_url: "./images/lights.png",
+                description: "Lights Out is a jump scare game. The rules are simple- the monster can only exist in darkness, so keep the lights on to survive and turn on all lights to win the game. The emphasis of this project was creating an appealing GUI and using the MVC design pattern.",
+                frameworks: "JavaFX"
             },
             {
                 id: 3,
