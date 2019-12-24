@@ -89,10 +89,10 @@ const db = {
             {
                 id: 2,
                 title: "Lights Out Game",
-                thumbnail: "./images/github.png",
+                thumbnail: "./images/lights.png",
                 github_url: "https://github.com/philyang18/Java-Lights-Out-Game",
                 languages: "Java",
-                video_url: "./images/lights.png",
+                video_url: "https://www.youtube.com/embed/HYIcbJPhVBQ",
                 description: "Lights Out is a jump scare game. The rules are simple- the monster can only exist in darkness, so keep the lights on to survive and turn on all lights to win the game. The emphasis of this project was creating an appealing GUI and using the MVC design pattern.",
                 frameworks: "JavaFX"
             },
