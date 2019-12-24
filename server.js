@@ -89,7 +89,7 @@ const db = {
             {
                 id: 2,
                 title: "Lights Out Game",
-                thumbnail: "./images/lights.png",
+                thumbnail: "./images/lights.jpg",
                 github_url: "https://github.com/philyang18/Java-Lights-Out-Game",
                 languages: "Java",
                 video_url: "https://www.youtube.com/embed/HYIcbJPhVBQ",
