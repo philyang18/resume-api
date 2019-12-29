@@ -107,7 +107,7 @@ const db = {
                 thumbnail: "./images/arduino.jpeg",
                 github_url: "",
                 languages: "C++, Java",
-                video_url: "https://www.youtube.com/watch?v=NmTOJV1b3xk&feature=youtu.be",
+                video_url: "https://www.youtube.com/embed/NmTOJV1b3xk",
                 description: "In the fall semester of 2019, I worked on a fully-funded project for the Nuzhdin Lab at USC with three other students. The goal of this project was to build an automated system of water tanks to store kelp samples in ideal ocean conditions for biofuel research. My primary role was programming the sensors with an Arduino Uno, and broadcasting the data onto the internet through an IoT platform called Losant so that the lab can observe tank conditions at all times. However, the Arduino we purchased did not have wifi capabilities and I did not want to spend more money on a wifi shield so I used a software called 'Cool Term' to continuously save Arduino data onto a text file. Then I wrote a script in Java which reads in lastest line from the file and sends a POST request to a Losant webhook. From Losant's app, I was able to access that line of data and break it into its separate components so that I can display the data on an interface. One amazing feature is that Losant will send a text message to the head of the lab if any of the tank conditions are abnormal.",
                 url: "https://nuhzdinlab.onlosant.com/kelp",
                 technologies: "Arduino, Cool Term, Losant"
