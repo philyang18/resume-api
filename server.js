@@ -21,7 +21,7 @@ const db = {
                 github_url: "https://github.com/philyang18/memeversity",
                 languages: "HTML, CSS, JavaScript, PHP",
                 video_url: "",
-                description: "This project is my first full stack application. The idea was to create a web app that allows users to search through popular meme templates so that they can create and save their own memes. Currently, the website retrieves the templates from a free meme API and stores the template urls onto my database. Since the API generates a different set of templates every few weeks, I 'refresh' my database with the new set of memes everytime a user logs in. I also implemented a button at the bottom of the home page so that the user can manually execute this process. Users can also 'favorite' the templates so that it is saved in my database before it is removed from the API.\nAll database communication is executed by making sql statements in PHP. The 'forgot password' is functional however it does not use a foolproof method because it simply emails the user their password instead of linking them to a page where they can change their password safely. Please note that I have not implemented the create functionality or the FaceBook login.",
+                description: "This project is my first full stack application. The idea was to create a web app that allows users to search through popular meme templates so that they can create and save their own memes. Currently, the website retrieves the templates from a free meme API and stores the template urls onto my database. Since the API generates a different set of templates every few weeks, I 'refresh' my database with the new set of memes everytime a user logs in. I also implemented a button at the bottom of the home page so that the user can manually execute this process. Users can also 'favorite' the templates so that it is saved in my database before it is removed from the API. All database communication is executed by making SQL statements in PHP. The 'forgot password' is functional however it does not use a foolproof method because it simply emails the user their password instead of linking them to a page where they can change their password safely. Please note that I have not implemented the create functionality or the FaceBook login.",
                 url: "http://303.itpwebdev.com/~yangphil/final_project/login.PHP",
                 frameworks: "Bootstrap",
                 type: "Full Stack"
@@ -33,7 +33,7 @@ const db = {
                 github_url: "https://github.com/philyang18/Nasa-Images",
                 languages: "HTML, CSS, JavaScript",
                 video_url: "",
-                description: "NASA Images is a single page application that uses NASA's Astronomy Photo of the Day and Mars Rover APIs. The site currently uses an in-memory API to store the user's favorite images because I have yet to implement a backend.",
+                description: "NASA Images is a single page application built in React that displays images from two NASA APIs. The site currently uses an in-memory API to store the user's favorite images because I have yet to implement a backend.",
                 url: "https://nasa-images.surge.sh",
                 frameworks: "Bootstrap, React",
                 type: "Front End"
@@ -45,7 +45,7 @@ const db = {
                 github_url: "https://github.com/philyang18/resume",
                 languages: "HTML, CSS, JavaScript",
                 video_url: "",
-                description: "This website uses an in-memory API to access all my project information and is deployed through Surge.  Initally, the projects were hardcoded onto the webpage but I realized that implementing an API would be more efficient for adding future projects because I do not have to add more HTML code and I avoid redeploying the site.",
+                description: "This website was built in React, deployed with Surge, and sends GET requests to an API to retrieve my project information.",
                 url: "",
                 frameworks: "Bootstrap, React",
                 type: "Front End"
@@ -68,13 +68,13 @@ const db = {
                 thumbnail: "./images/lights.jpg",
                 github_url: "https://github.com/philyang18/Java-Lights-Out-Game",
                 languages: "Java",
-                video_url: "https://www.youtube.com/embed/HYIcbJPhVBQ",
-                description: "Lights Out is a jump scare game. The rules are simple- the monster can only exist in darkness, so keep the lights on to survive and turn on all lights to win the game. The emphasis of this project was creating an appealing GUI and using the MVC design pattern.",
+                video_url: "https://www.youtube.com/embed/NmTOJV1b3xk",
+                description: "Lights Out is a jump scare game. The emphasis of this project was creating an appealing GUI and using the MVC design pattern.",
                 frameworks: "JavaFX"
             },
             {
                 id: 3,
-                title: "Sieve of Erastosthenes",
+                title: "Towers of Hanoi",
                 thumbnail: "./images/github.png",
                 github_url: "",
                 languages: "C++",
@@ -108,7 +108,7 @@ const db = {
                 github_url: "",
                 languages: "C++, Java",
                 video_url: "https://www.youtube.com/watch?v=NmTOJV1b3xk&feature=youtu.be",
-                description: "In the fall semester of 2019, I worked on a fully-funded project for the Nuzhdin Lab at USC with three other students. The goal of this project was to build an automated system of water tanks to store kelp samples in ideal ocean conditions for biofuel research. My primary role was programming the sensors with an Arduino Uno, and broadcasting the data onto the internet through an IoT platform called Losant so that the lab can observe tank conditions at all times. However, the Arduino we purchased did not have wifi capabilities and I did not want to spend more money on a wifi shield so I used a software called 'Cool Term' to continuously save Arduino data onto a text file. Then I wrote a script in Java which reads in lastest line from the file and sends a POST request to a Losant webhook. From Losant's app, I was able to access that line of data and break it into its separate components so that I can display the data nicely on an interface. One amazing feature is that Losant will send a text message to the head of the lab if any of the tank conditions are abnormal.",
+                description: "In the fall semester of 2019, I worked on a fully-funded project for the Nuzhdin Lab at USC with three other students. The goal of this project was to build an automated system of water tanks to store kelp samples in ideal ocean conditions for biofuel research. My primary role was programming the sensors with an Arduino Uno, and broadcasting the data onto the internet through an IoT platform called Losant so that the lab can observe tank conditions at all times. However, the Arduino we purchased did not have wifi capabilities and I did not want to spend more money on a wifi shield so I used a software called 'Cool Term' to continuously save Arduino data onto a text file. Then I wrote a script in Java which reads in lastest line from the file and sends a POST request to a Losant webhook. From Losant's app, I was able to access that line of data and break it into its separate components so that I can display the data on an interface. One amazing feature is that Losant will send a text message to the head of the lab if any of the tank conditions are abnormal.",
                 url: "https://nuhzdinlab.onlosant.com/kelp",
                 technologies: "Arduino, Cool Term, Losant"
             },
