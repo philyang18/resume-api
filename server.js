@@ -116,10 +116,10 @@ const db = {
                 id: 2,
                 title: "Bluetooth Car",
                 thumbnail: "./images/car.jpg",
-                github_url: "github.com",
+                github_url: "https://github.com/philyang18/Bluetooth-Car",
                 languages: "C++",
                 video_url: "",
-                description: "This car is one of my favorite and most fun projects. The car is controlled my iPhone's accelerometer via the Bluefruit app which sends X, Y, Z values to my Particle Argon microcontroller. I wanted to mimic a few existing car features such as autonomous emergency braking and automatic headlights. For the brake system, I implemented an ultrasonic distance sensor to the front of the car and added a piezoelectric speaker that will create a 'beeping' sound that gradually increases in frequency as the car approaches an obstacle. The lights are controlled by a photoresistor and I also integrated a power switch so that the user can turn off the headlights. Additionally, I created an interface on Losant so that I can observe speed, set variable max speeds, and toggle the braking system. The reason why I chose a Particle Argon instead of an Arduino is because it has bluetooth and wifi capabilities. Wifi is needed to connect to additional features on the Losant interface and bluetooth is necessary to communicate with the accelerometer.",
+                description: "The car is controlled my iPhone's accelerometer via the Bluefruit app which sends X, Y, Z values to my Particle Argon microcontroller. I wanted to mimic a few existing car features such as autonomous emergency braking and automatic headlights. For the brake system, I implemented an ultrasonic distance sensor to the front of the car and added a piezoelectric speaker that will create a 'beeping' sound that gradually increases in frequency as the car approaches an obstacle. The lights are controlled by a photoresistor and I also integrated a power switch so that the user can turn off the headlights. Additionally, I created an interface on Losant so that I can observe speed, set variable max speeds, and toggle the braking system. The reason why I chose a Particle Argon instead of an Arduino is because it has bluetooth and wifi capabilities. Wifi is needed to connect to additional features on the Losant interface and bluetooth is necessary to communicate with the accelerometer.",
                 url: "https://carproject.onlosant.com/dashboard",
                 technologies: "Particle, Bluefruit, Losant"
             }
