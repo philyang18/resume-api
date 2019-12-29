@@ -22,7 +22,7 @@ const db = {
                 languages: "HTML, CSS, JavaScript, PHP",
                 video_url: "",
                 description: "This project is my first full stack application. The idea was to create a web app that allows users to search through popular meme templates so that they can create and save their own memes. Currently, the website retrieves the templates from a free meme API and stores the template urls onto my database. Since the API generates a different set of templates every few weeks, I 'refresh' my database with the new set of memes everytime a user logs in. I also implemented a button at the bottom of the home page so that the user can manually execute this process. Users can also 'favorite' the templates so that it is saved in my database before it is removed from the API. All database communication is executed by making SQL statements in PHP. The 'forgot password' is functional however it does not use a foolproof method because it simply emails the user their password instead of linking them to a page where they can change their password safely. Please note that I have not implemented the create functionality or the FaceBook login.",
-                url: "http://303.itpwebdev.com/~yangphil/final_project/login.PHP",
+                url: "http://303.itpwebdev.com/~yangphil/final_project/login.php",
                 frameworks: "Bootstrap",
                 type: "Full Stack"
             },
@@ -68,7 +68,7 @@ const db = {
                 thumbnail: "./images/lights.jpg",
                 github_url: "https://github.com/philyang18/Java-Lights-Out-Game",
                 languages: "Java",
-                video_url: "https://www.youtube.com/embed/NmTOJV1b3xk",
+                video_url: "https://www.youtube.com/embed/HYIcbJPhVBQ",
                 description: "Lights Out is a jump scare game. The emphasis of this project was creating an appealing GUI and using the MVC design pattern.",
                 frameworks: "JavaFX"
             },
