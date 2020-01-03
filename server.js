@@ -40,7 +40,7 @@ const db = {
             },
             {
                 id: 3,
-                title: "this",
+                title: "This Website",
                 thumbnail: "./images/pin.jpg",
                 github_url: "https://github.com/philyang18/resume",
                 languages: "HTML, CSS, JavaScript",
@@ -54,13 +54,12 @@ const db = {
         programming: [
             {
                 id: 1,
-                title: "Sieve of Erastosthenes",
+                title: "Towers of Hanoi",
                 thumbnail: "./images/github.png",
-                github_url: "",
+                github_url: "https://github.com/philyang18/CPP-Towers-of-Hanoi",
                 languages: "C++",
                 video_url: "",
-                description: "",
-                frameworks: ""
+                description: "This is a recursive solution to any Towers of Hanoi set up from 3-10 disks. The rules of this game is to move all the disks from one peg to another without putting a larger disk on top of a smaller one."
             },
             {
                 id: 2,
@@ -71,25 +70,17 @@ const db = {
                 video_url: "https://www.youtube.com/embed/HYIcbJPhVBQ",
                 description: "Lights Out is a jump scare game. The emphasis of this project was creating an appealing GUI and using the MVC design pattern.",
                 frameworks: "JavaFX"
-            },
-            {
-                id: 3,
-                title: "Towers of Hanoi",
-                thumbnail: "./images/github.png",
-                github_url: "",
-                languages: "C++",
-                video_url: "",
-                description: ""
-            },
-            {
-                id: 4,
-                title: "Connect 4 AI",
-                thumbnail: "./images/github.png",
-                github_url: "",
-                languages: "C++",
-                video_url: "",
-                description: ""
             }
+            // ,
+            // {
+            //     id: 4,
+            //     title: "Connect 4 AI",
+            //     thumbnail: "./images/github.png",
+            //     github_url: "",
+            //     languages: "C++",
+            //     video_url: "",
+            //     description: ""
+            // }
         ],
         microcontrollers: [
             {
