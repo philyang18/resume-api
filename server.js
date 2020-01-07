@@ -59,7 +59,7 @@ const db = {
                 github_url: "https://github.com/philyang18/CPP-Towers-of-Hanoi",
                 languages: "C++",
                 video_url: "",
-                description: "This is a recursive solution to any Towers of Hanoi set up from 3-10 disks. The rules of this game is to move all the disks from one peg to another without putting a larger disk on top of a smaller one."
+                description: "This is a recursive solution to any Towers of Hanoi set up from 2-10 disks. The rules of this game is to move all the disks from one peg to another without putting a larger disk on top of a smaller one."
             },
             {
                 id: 2,
